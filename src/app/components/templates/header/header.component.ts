@@ -40,7 +40,7 @@ export class HeaderComponent {
   @HostListener('window:resize', ['$event'])
   onResize() {
     this.innerWidth = window.innerWidth;
-    if (this.innerWidth > 810) {
+    if (this.innerWidth >= 810) {
       this.isOpen = true;
     } else {
       this.isOpen = false;
@@ -49,7 +49,7 @@ export class HeaderComponent {
 
   ngOnInit() {
     this.innerWidth = window.innerWidth;
-    if (this.innerWidth > 810) {
+    if (this.innerWidth >= 810) {
       this.isOpen = true;
     } else {
       this.isOpen = false;
