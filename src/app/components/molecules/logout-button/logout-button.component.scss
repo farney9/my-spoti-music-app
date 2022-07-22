@@ -1,6 +1,6 @@
 .bottom__signout-button {
     min-width: 200px;
-    background-color: rgb(255, 33, 115);
+    background-color: #1db954;
     border: 0px;
     padding: 8px;
     border-radius: 8px;
@@ -8,7 +8,7 @@
     cursor: pointer;
     transition: 0.2s ease-in-out;
     &:hover {
-      background-color: rgb(187, 22, 83);
+      background-color: #1db954;
     }
 
     .bottom__signout-button__icon {

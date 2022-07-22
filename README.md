@@ -44,5 +44,3 @@ https://angular.io/guide/setup-local
 React 
 https://es.reactjs.org/docs/create-a-new-react-app.html
 
-Presentación GIT 
-https://wiki.pragma.com.co/git-galaxy

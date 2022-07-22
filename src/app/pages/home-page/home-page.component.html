@@ -5,8 +5,8 @@
     </app-page-subtitle>
     <app-track-list>
         <app-track-items *ngFor="let track of resultTrackList" (click)="toggleFavorite(track)" [track]="track"
-            [isActive]="isFavorite(track)">
-            ></app-track-items>
+            [isActive]="isFavorite(track)">            
+        </app-track-items>
     </app-track-list>
     <app-load-more-button (click)="loadMore()" *ngIf="resultTrackList.length"></app-load-more-button>
 </app-layout>
