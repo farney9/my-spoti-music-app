@@ -1,0 +1,18 @@
+.bottom__signout-button {
+    min-width: 200px;
+    background-color: rgb(255, 33, 115);
+    border: 0px;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      background-color: rgb(187, 22, 83);
+    }
+
+    .bottom__signout-button__icon {
+      font-size: inherit;
+      color: inherit;
+    }
+  }

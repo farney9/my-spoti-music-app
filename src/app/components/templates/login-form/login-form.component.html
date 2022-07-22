@@ -1,0 +1,11 @@
+<form class="login__form" (ngSubmit)="onClickAuth()">
+    <figure class="login__logo__figure">
+        <app-logo-image [typeLogo]="logoType"></app-logo-image>
+    </figure>
+    <h2 class="login__title">My music app - Pragma Practice</h2>
+    <span class="login__subtitle">Esta app está hecha para fines prácticos, pero utiliza tu cuenta de <a
+            href="https://open.spotify.com/" target="_blank">Spotify</a> para
+        acceder y mostrar tu información.</span>
+    <span class="login__subtitle">Autor: Anthony Cardoze 2022</span>
+    <button type="submit" class="login__button">Autenticar</button>
+</form>

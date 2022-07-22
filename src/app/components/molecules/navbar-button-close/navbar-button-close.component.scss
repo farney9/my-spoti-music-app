@@ -1,0 +1,22 @@
+.navbar__close__button{
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+    background-color: transparent;
+    border: 0px;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease-in-out;
+
+    @media screen and (min-width: 810px) {
+      display: none;
+    }
+
+    .navbar__close__icon {
+      font-size: 2rem;
+      color: inherit;
+    }
+  }

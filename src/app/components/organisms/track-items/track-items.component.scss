@@ -1,0 +1,78 @@
+.tracks__item {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #181818;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #1f1f1f;
+  }
+
+  .track__img__container {
+    position: relative;
+    cursor: pointer;
+    &:hover .track__icon {
+      opacity: 1;
+      transition: opacity 1s;
+    }
+
+    .track__img {
+      border-radius: 4px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .track__icon {
+      font-size: 10rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+
+      @media screen and (min-width: 768px) {
+        font-size: 8rem;
+      }
+    }
+
+    .track__icon__active {
+      color: rgb(255, 33, 115);
+    }
+
+    .track__icon__unactive {
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  .track__info__container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 0.5rem 0 0.5rem 0;
+    color: rgba(255, 255, 255, 0.5);
+    
+    .tracks__title {
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    .tracks__subtitle {
+      font-size: 1rem;
+    }
+
+    .tracks__icon {
+      font-size: 1.2rem;
+    }
+
+    .track__icon__active {
+      color: rgb(255, 33, 115);
+    }
+
+    .track__icon__unactive {
+      color: #fff;
+    }
+  }
+}

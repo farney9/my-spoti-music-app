@@ -1,0 +1,12 @@
+<app-layout>
+    <app-username-search (onSearchEnter)="onSearchEnter($event)" [username]="userData$?.display_name">
+    </app-username-search>
+    <app-page-subtitle *ngIf="resultTrackList.length">Resultado de busqueda:
+    </app-page-subtitle>
+    <app-track-list>
+        <app-track-items *ngFor="let track of resultTrackList" (click)="toggleFavorite(track)" [track]="track"
+            [isActive]="isFavorite(track)">
+            ></app-track-items>
+    </app-track-list>
+    <app-load-more-button (click)="loadMore()" *ngIf="resultTrackList.length"></app-load-more-button>
+</app-layout>

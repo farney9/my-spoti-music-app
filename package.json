@@ -1,0 +1,46 @@
+{
+	"name": "my-music-app",
+	"version": "0.0.0",
+	"scripts": {
+		"ng": "ng",
+		"start": "ng serve",
+		"build": "ng build",
+		"watch": "ng build --watch --configuration development",
+		"test": "jest",
+		"test-watch": "jest --watchAll"
+	},
+	"private": true,
+	"dependencies": {
+		"@angular/animations": "^14.0.0",
+		"@angular/common": "^14.0.0",
+		"@angular/compiler": "^14.0.0",
+		"@angular/core": "^14.0.0",
+		"@angular/forms": "^14.0.0",
+		"@angular/platform-browser": "^14.0.0",
+		"@angular/platform-browser-dynamic": "^14.0.0",
+		"@angular/router": "^14.0.0",
+		"@ngrx/component": "^13.2.0",
+		"@ngrx/effects": "^14.0.0",
+		"@ngrx/store": "^13.2.0",
+		"@ngrx/store-devtools": "13.2.0",
+		"ngrx-store-localstorage": "^13.0.1",
+		"tslib": "^2.3.0",
+		"zone.js": "~0.11.4"
+	},
+	"devDependencies": {
+		"@angular-builders/jest": "latest",
+		"@angular-devkit/build-angular": "^14.0.0",
+		"@angular/cli": "~14.0.0",
+		"@angular/compiler-cli": "^14.0.0",
+		"@briebug/jest-schematic": "4.0.0",
+		"@types/jest": "latest",
+		"@types/node": "^17.0.44",
+		"jest": "latest",
+		"typescript": "~4.7.2"
+	},
+	"config": {
+		"commitizen": {
+			"path": "cz-emoji"
+		}
+	}
+}

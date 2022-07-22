@@ -1,0 +1,39 @@
+.navbar {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 36px;
+    margin-top: 16px;
+
+
+    
+
+    .bottom__container {
+      margin-top: auto;
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+
+      .bottom__username {
+        font-weight: bold;
+        color: #fff;
+        border: 1px solid white;
+        padding: 8px;
+        border-radius: 8px;
+        font-size: 1rem;
+        min-width: 200px;
+      }
+
+      
+    }
+
+    
+
+    
+  }

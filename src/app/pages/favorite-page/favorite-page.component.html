@@ -1,0 +1,15 @@
+<app-layout>
+    <app-page-title>Mis Favoritos ({{favoriteList.length}})</app-page-title>
+    <app-page-subtitle *ngIf="!favoriteList.length; else elseBlock">No tienes favoritos, ve a la <a
+            routerLink="/home">pagina de busqueda</a>
+        para
+        agregar alguno</app-page-subtitle>
+    <ng-template #elseBlock>
+        <app-track-list>
+            <app-track-items *ngFor="let track of favoriteList" (click)="removeFavorite(track)" [track]="track"
+                [isActive]="true">
+                ></app-track-items>
+        </app-track-list>
+    </ng-template>
+</app-layout>
+

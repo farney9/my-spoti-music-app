@@ -1,0 +1,7 @@
+<aside class="navbar_container">
+    <app-navbar-button-open [isOpen]="isOpen" (click)="toggleMenu()"></app-navbar-button-open>
+    <header class="header" [ngStyle]="{'width': isOpen ? '250px' :0}">
+        <app-navbar (handleClose)="toggleMenu()" (handleLogout)="logout()" [logoType]="logoType"
+            [displayName]="userData$ ? userData$.display_name : 'No Name'"></app-navbar>
+    </header>
+</aside>

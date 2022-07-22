@@ -1,0 +1,11 @@
+<li class="tracks__item">
+    <figure class="track__img__container">
+        <img class="track__img" src="{{track && track.album.images.at(0)?.url}}" alt="track preview image">
+        <i class="fa fa-heart track__icon {{isActive ? 'track__icon__active': 'track__icon__unactive'}}"></i>
+    </figure>
+    <article class="track__info__container">
+        <h2 class="tracks__title">{{track && track.name}}</h2>
+        <span class="tracks__subtitle">{{track && track.artists.at(0)?.name}}</span>
+        <i class="fa fa-heart track__icon {{isActive ? 'track__icon__active': 'track__icon__unactive'}}"></i>
+    </article>
+</li>

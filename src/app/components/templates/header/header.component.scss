@@ -1,0 +1,24 @@
+.navbar_container {
+  min-height: 568px;
+  height: 100vh;
+  position: relative;
+
+  .header {
+    height: 100%;
+    width: 250px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.2s ease-in-out;
+
+    @media screen and (min-width: 810px) {
+      position: relative;
+      width: 250px;
+      padding-top: 50px;
+    }
+
+  }
+}

@@ -1,0 +1,11 @@
+<app-layout>
+    <app-profile-container>
+        <app-avatar-img [src]="userData$ && userData$.images.length ? userData$.images[0].url : ''"></app-avatar-img>
+        <app-profile-info [displayName]="userData$ && userData$.display_name ? userData$.display_name : ''"
+            [email]="userData$ && userData$.email ? userData$.email : ''"
+            [country]="userData$ && userData$.country ? userData$.country : ''"
+            [totalFollowers]="userData$ && userData$.followers ? userData$.followers.total : 0">
+        </app-profile-info>
+    </app-profile-container>
+</app-layout>
+

@@ -1,0 +1,28 @@
+.searchbar__container{
+    position: relative;
+    width: 100%;
+    .searchbar__input{
+        border: 2px solid transparent;
+        padding: 1rem 0 1rem 3rem;
+        max-width: 100%;
+        width: 364px;
+        line-height: 20px;
+        border-radius: 25px;
+        color: black;
+        outline: none;
+        transition: all 0.2s ease-in-out;
+        
+        &:focus{
+            border-color: rgb(255, 33, 115);
+        }
+    }
+
+    .searchbar__icon{
+        position: absolute;
+        top: 50%;
+        left: 1rem;
+        transform: translateY(-50%);
+        color: black;
+        font-size: 1.6rem;
+    }
+}

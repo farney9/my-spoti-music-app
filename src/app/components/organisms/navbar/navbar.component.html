@@ -1,0 +1,9 @@
+<nav class="navbar">
+    <app-navbar-button-close (click)="handleCloseClick()"></app-navbar-button-close>
+    <app-header-logo [logoType]="logoType"></app-header-logo>
+    <app-nav-link-list></app-nav-link-list>
+    <article class="bottom__container">
+        <span class="bottom__username">{{displayName}}</span>
+        <app-logout-button (click)="handleLogoutClick()"></app-logout-button>
+    </article>
+</nav>
