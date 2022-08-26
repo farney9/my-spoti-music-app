@@ -31,6 +31,10 @@ const routes: Routes = [
     component: ProfilePageComponent,
     canActivate: [AuthGuardGuard],
   },
+  {
+    path: '**',
+    component: LoginPageComponent
+  },
 ];
 
 @NgModule({

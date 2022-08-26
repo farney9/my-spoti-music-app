@@ -6,10 +6,7 @@ export const addFavoriteAction = createAction(
   props<PayloadType>()
 );
 
-export const addFavoriteFunction = (
-  state: TrackList,
-  payload: PayloadType
-): TrackList => {
+export const addFavoriteFunction = (state: TrackList, payload: PayloadType): TrackList => {
   return {
     ...state,
     tracks: [...state.tracks, payload.track],
