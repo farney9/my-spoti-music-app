@@ -13,6 +13,7 @@
   .track__img__container {
     position: relative;
     cursor: pointer;
+
     &:hover .track__icon {
       opacity: 1;
       transition: opacity 1s;
@@ -53,7 +54,7 @@
     gap: 4px;
     padding: 0.5rem 0 0.5rem 0;
     color: rgba(255, 255, 255, 0.5);
-    
+
     .tracks__title {
       font-size: 1.2rem;
       font-weight: 700;
@@ -65,6 +66,11 @@
 
     .tracks__icon {
       font-size: 1.2rem;
+    }
+
+    .track__icon__container {
+      align-self: center;
+      justify-content: center;
     }
 
     .track__icon__active {

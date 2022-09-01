@@ -14,8 +14,7 @@ export class ProfilePageComponent implements OnInit {
   constructor(private userservice: UserService) {}
 
   ngOnInit(): void {
-    this.userDataSubscription$ = this.userservice
-      .getUser()
+    this.userDataSubscription$ = this.userservice.getUser()
       .subscribe((userData) => (this.userData$ = userData));
   }
 

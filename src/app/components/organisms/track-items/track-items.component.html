@@ -6,6 +6,8 @@
     <article class="track__info__container">
         <h2 class="tracks__title">{{track && track.name}}</h2>
         <span class="tracks__subtitle">{{track && track.artists.at(0)?.name}}</span>
-        <i class="fa fa-heart track__icon {{isActive ? 'track__icon__active': 'track__icon__unactive'}}"></i>
+        <div class="track__icon__container">
+            <i class="fa fa-heart track__icon {{isActive ? 'track__icon__active': 'track__icon__unactive'}}"></i>
+        </div>
     </article>
 </li>
